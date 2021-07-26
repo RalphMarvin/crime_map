@@ -167,37 +167,39 @@ class AddCrimeView extends AddCrimePageState {
       margin: const EdgeInsets.only(top: 2.0, bottom: 5.0),
       width: MediaQuery.of(context).size.width * 0.80,
       child: TextFormField(
-          decoration: InputDecoration(
-            border: OutlineInputBorder(
-              borderSide: BorderSide(
-                width: 0.5,
-              ),
+        enabled: false,
+        decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 0.5,
             ),
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                width: 0.5,
-              ),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                width: 0.5,
-              ),
-            ),
-            floatingLabelBehavior: FloatingLabelBehavior.auto,
-            labelText: 'Enter Latitude',
-            labelStyle: TextStyle(
-              fontSize: 15.0,
-              fontWeight: FontWeight.w500,
-            ),
-            contentPadding: EdgeInsets.only(left: 20.0, right: 10.0),
           ),
-          style: TextStyle(
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 0.5,
+            ),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 0.5,
+            ),
+          ),
+          floatingLabelBehavior: FloatingLabelBehavior.auto,
+          labelText: 'Enter Latitude',
+          labelStyle: TextStyle(
             fontSize: 15.0,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w500,
           ),
-          controller: latitudeCtrl,
-          keyboardType: TextInputType.number,
-          validator: (value) => value!.isEmpty ? 'Please enter a latitude.' : null),
+          contentPadding: EdgeInsets.only(left: 20.0, right: 10.0),
+        ),
+        style: TextStyle(
+          fontSize: 15.0,
+          fontWeight: FontWeight.bold,
+        ),
+        controller: latitudeCtrl,
+        keyboardType: TextInputType.number,
+        validator: (value) => value!.isEmpty ? 'Please enter a latitude.' : null,
+      ),
     );
   }
 
@@ -206,37 +208,39 @@ class AddCrimeView extends AddCrimePageState {
       margin: const EdgeInsets.only(top: 2.0, bottom: 5.0),
       width: MediaQuery.of(context).size.width * 0.80,
       child: TextFormField(
-          decoration: InputDecoration(
-            border: OutlineInputBorder(
-              borderSide: BorderSide(
-                width: 0.5,
-              ),
+        enabled: false,
+        decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 0.5,
             ),
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                width: 0.5,
-              ),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                width: 0.5,
-              ),
-            ),
-            floatingLabelBehavior: FloatingLabelBehavior.auto,
-            labelText: 'Entyer Longitude',
-            labelStyle: TextStyle(
-              fontSize: 15.0,
-              fontWeight: FontWeight.w500,
-            ),
-            contentPadding: EdgeInsets.only(left: 20.0, right: 10.0),
           ),
-          style: TextStyle(
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 0.5,
+            ),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 0.5,
+            ),
+          ),
+          floatingLabelBehavior: FloatingLabelBehavior.auto,
+          labelText: 'Entyer Longitude',
+          labelStyle: TextStyle(
             fontSize: 15.0,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w500,
           ),
-          controller: longitudeCtrl,
-          keyboardType: TextInputType.number,
-          validator: (value) => value!.isEmpty ? 'Please enter a longitude' : null),
+          contentPadding: EdgeInsets.only(left: 20.0, right: 10.0),
+        ),
+        style: TextStyle(
+          fontSize: 15.0,
+          fontWeight: FontWeight.bold,
+        ),
+        controller: longitudeCtrl,
+        keyboardType: TextInputType.number,
+        validator: (value) => value!.isEmpty ? 'Please enter a longitude' : null,
+      ),
     );
   }
 
