@@ -38,7 +38,7 @@ abstract class AddCrimePageState extends State<AddCrimePage> {
     selectedImagesPath = [];
 
     isFromOnline = false;
-    isLoadingImages = true;
+    isLoadingImages = false;
 
     latitudeCtrl.text = widget.latitude.toString();
     longitudeCtrl.text = widget.longitude.toString();
@@ -110,6 +110,8 @@ abstract class AddCrimePageState extends State<AddCrimePage> {
     if (images != null) {
       if (images.length != 0) {
         setState(() {
+          this.isFromOnline = false;
+          this.isLoadingImages = false;
           selectedImages.add(images[0]);
           selectedImagesPath.add(selectedImages[0].path);
         });
@@ -128,6 +130,8 @@ abstract class AddCrimePageState extends State<AddCrimePage> {
       print('imgs_: ${images.length}');
       for (var image in images) {
         setState(() {
+          this.isFromOnline = false;
+          this.isLoadingImages = false;
           this.selectedImagesPath.add(image.path);
         });
       }
